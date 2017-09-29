@@ -1,0 +1,28 @@
+{
+  "name": "super-hero-compatibility-test",
+  "version": "1.0.0",
+  "description": "Building an Super Hero Compatibility Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test.git"
+  },
+  "keywords": [
+    "super",
+    "heros"
+  ],
+  "author": "Jason Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test/issues"
+  },
+  "homepage": "https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.0"
+  }
+}
