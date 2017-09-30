@@ -1,17 +1,22 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var path = require('path')
+var heros = require('./app/data/friends.js')
+var routes = require('./app/routing/htmlRouts.js')
+var Api = require('./app/routing/apiRoutes.js')
 
-var app = express();
-
-var huh = require('./app/routing/htmlRouts.js') 
-
-
-
+var app = express()
 
 
 
 
+app.use(bodyParser.urlencoded({extended:false}))
+
+app.use(bodyParser.json())
+
+console.log(heros);
+
+routes(app, __dirname);
 
 
 
