@@ -1,142 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
     crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Zilla+Slab+Highlight" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <title>SUPER HERO COMPATIBILITY TEST</title>
-<style>
-    .input{
-        max-width: 50%;
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <title>SUPER HERO COMPATIBILITY TEST</title>
+  <style>
+    .input {
+      max-width: 50%;
     }
-</style>
+
+    h1, h2, h3{
+      
+      font-family: 'Bangers', cursive;
+    }
+    h1{
+      font-size: 85px;
+    }
+    h2, p{
+      font-family: 'Shadows Into Light', cursive;
+    }
+    h3{
+      font-size: 40px;
+    }
+    h4{
+      
+      font-family: 'Shadows Into Light', cursive;
+    }
+    #footP{margin-top: 10em;
+        font-size: 17px;
+        
+    }
+
+    select{
+   width: 190px;
+      
+    }
+  </style>
 </head>
+
 <body>
-    <div class="main container">
-    <h1 class="text-center display-4" >SUPER HERO COMPATIBILITY TEST</h1>
+  <div class="main container">
+    <h1 class="text-center ">SUPER HERO COMPATIBILITY TEST</h1>
 
-    <h2 class="text-center text-muted" >FIND OUT WHAT HERO YOU ARE MOST LIKE</h2>
+    <h2 class="text-center text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</h2>
     <br>
 
-    <h3 >About You</h3>
+    <h3>About You</h3>
     <br>
-    <h6 >NAME(Required)</h6>
-  <input class="input-group" type="text" name="" id="name" required="required">
-    
+    <h4 class="lead">NAME (required)</h4>
+    <input class="input-group" type="text" name="" id="name" required="required">
+
     <br>
 
+
+    <h4 class="lead">LINK TO YOUR PHOTO (required)</h4>
+    <input class="input-group" type="text" name="" id="name" required="required">
+
+
+    <br>
+    <hr class="my-4">
     
-    <h6>LINK TO PHOTO IMAGE (Required)</h6>
-    <input  class="input-group" type="text" name="" id="name" required="required">
-    
+      <h3>Questions</h3>
 
-    <br><hr class="my-4">
-
-        <h3 >Questions</h3>
-
-        <br>
-    <h4 class="lead">What Animal</h4>
-    <select id="q1" class="">
+      <br>
+      <h4 class="lead">ARE YOU AFFRAID OF HEIGHTS?</h4>
+      <select id="q1" class="">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU LIKE WORKING IN GROUPS?</h4>
       <select id="q2">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU LIKE COMPUTERS?</h4>
       <select id="q3">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU LIKE TO PARTY?</h4>
       <select id="q4">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU LIKE SPACE TRAVEL?</h4>
       <select id="q5">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU GET ANGRY QUICKLY?</h4>
       <select id="q6">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU LIKE MOTORCYCLES?</h4>
       <select id="q7">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO LIKE TO FOLLOW THE RULES?</h4>
       <select id="q8">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU TRY TO ALWAYS BE THE LEADER?</h4>
       <select id="q9">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
-      <h4 class="lead">LINK TO PHOTO IMAGE</h4>
+      <h4 class="lead">DO YOU WANT TO HIDE YOUR IDENTITY AS A HERO?</h4>
       <select id="q10">
         <option value=""></option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1">1 <br>(No Way)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 <br>(Heck Yea)</option>
       </select>
-      
-<br><br><br>
-      <input class="btn btn-primary btn-lg btn-block" type="submit" placeholder="SUBMIT">
+
+      <br><br><br>
+      <input id="submit" class="btn btn-primary btn-lg btn-block" type="submit" placeholder="SUBMIT">
 
 
+    
+  </div>
 
-    </div>
+  <footer>
+      <p class="text-center" id="footP">&copy COPY RIGHT 2017 J A S O N + N A V A R R O <br><a  class="text-center" href="/all">All API's</a> | <a href="#">GitHub Repo</a> </p> 
 
+  </footer>
 </body>
+
 </html>
