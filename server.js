@@ -1,46 +1,31 @@
+// NPM EXPORTS
 var express = require('express')
 var bodyParser = require('body-parser')
 var path = require('path')
+
+var app = express()
+
+// LOCAL FILES
 var heros = require('./app/data/friends.js')
 var routes = require('./app/routing/htmlRouts.js')
 var Api = require('./app/routing/apiRoutes.js')
 
-var app = express()
 
 
-
-
-app.use(bodyParser.urlencoded({extended:false}))
+// SETTING MIDDLEWARE WITH BODY PARSER
+app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(bodyParser.json())
 
-console.log(heros);
 
-routes(app, __dirname);
+// CALLING ROUTE AND API PATHS FORM ROUTING FOLDER
+routes(app, __dirname, path)
 
-
-
-
+Api(app, heros)
 
 
 
-
-// app.use('/', function(req, res, next){
-
-//     console.log(req.url);
-
-// next();
-// })
-
-// app.get('/', function(req, res){
-
-//     console.log(req.params);
-// res.send("Welcome to the home page.")
-
-// })
-
-
-
+// L I S T E N I N G  T O  P O R T
 app.listen(2222, function(){
     console.log("Listening to PORT 2222");
 })

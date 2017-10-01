@@ -1,13 +1,7 @@
-var express = require("express")
-var path = require('path')
-var bodyParser = require("body-parser")
-var app = express();
+function routeOne(app, __dirname, path) {
 
-
-
-function routeOne(app, __dirname) {
     app.get("/", function (req, res) {
-        console.log("hi");
+        
         res.sendFile(path.join(__dirname + "/app/public/home.html"))
     })
 
@@ -28,7 +22,6 @@ function routeOne(app, __dirname) {
     
     })
 
-    
     
 
 }
