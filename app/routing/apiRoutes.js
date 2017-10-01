@@ -73,27 +73,41 @@ module.exports = function (app, heros) {
             return a - b
         });
 
-        // HERE I FIND THE MATCH BY TAKING THE LEAST DIFFERENCE FROM THE matchHero ARRAY AND FINDING THE MATCHING INDEX IN THE cloneArray.
-        var findMatch = cloneArray.indexOf(matchHero[0])
+        // HERE I FIND THE MATCH BY TAKING THE LEAST DIFFERENCE FROM THE matchHero ARRAY AND FINDING THE MATCHING INDEX IN THE cloneArray AND FOR A CATCH INCASE TWO HEROS MATCH ONE WILL BE CHOSEN BY RANDOM.
+        var findMatch = [cloneArray.indexOf(matchHero[0]), cloneArray.lastIndexOf(matchHero[0])]
 
-        // HERE I MAKE A CATCH IF THE USER MATCHES TWO HEROS, ONE GETS CHOSEN BY RANDOM.
+
+        // HERE I CATCH IF TWO HEROS MATCH OR NOT AND SET THE MATCHING HERO
         if (matchHero[0] == matchHero[1]) {
-            console.log("THE CATCH MATCH ", heros[Math.floor((Math.random() * 2) + 0)]);
+
+            var Match = heros[findMatch[Math.floor((Math.random() * 2) + 0)]]
         } else {
-            console.log("THE MATCH", heros[findMatch])
+            Match = heros[findMatch[0]]
         }
-
-
-        // HERE I LOG EVERYTHING FOR TESTING PURPOSES 
-        // console.log("findMatch", findMatch);
-        // console.log("matchHero", matchHero);
-        // console.log("cloneArray", cloneArray);
-        // console.log("heroTotals", heroTotals);
-        // console.log("userSum", userSum);
-
 
         // HERE I PUSH THE USERS INFO INT THE HERO API
         heros.push(req.body)
+
+
+        res.send(Match)
+
+
+        // HERE I KEPT THE CONSOLE LOGS FOR TESTING PURPOSES 
+        console.log("the match", Match);
+        console.log("findMatch", findMatch);
+        console.log("matchHero", matchHero);
+        console.log("cloneArray", cloneArray);
+        console.log("heroTotals", heroTotals);
+        console.log("userSum", userSum);
+
+            // HERE I RESET MY ARRAYS
+            cloneArray = []
+            userMatchMath = []
+            heroTotals = []
+            parseUserInput = []
+            matchIndex = []
+    
+            console.log(matchIndex);
 
     })
 

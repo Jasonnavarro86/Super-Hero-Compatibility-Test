@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-    crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Shadows+Into+Light" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Shadows+Into+Light" rel="stylesheet">
+   
+  
   <title>SUPER HERO COMPATIBILITY TEST</title>
   <style>
     .input {max-width: 50%;}
@@ -19,7 +21,7 @@
 
     h1{font-size: 85px;}
 
-    h2, p{font-family: 'Shadows Into Light', cursive;}
+    h2, p,a{font-family: 'Shadows Into Light', cursive;}
 
     h3{font-size: 40px;}
 
@@ -27,6 +29,7 @@
 
     #footP{margin-top: 10em; font-size: 17px;}
 
+    #submit{font-family: 'Shadows Into Light', cursive;}
     select{ width: 190px; font-family: 'Shadows Into Light', cursive;}
   </style>
 </head>
@@ -52,6 +55,7 @@
 
     <br>
     <hr class="my-4">
+  
     
       <h3>Questions</h3>
 
@@ -157,21 +161,38 @@
       </select>
 
       <br><br><br>
-      <input id="submit" class="btn btn-primary btn-lg btn-block" type="submit" placeholder="SUBMIT">
-
-
+      <input id="submit"  class="btn btn-primary btn-lg btn-block" type="submit" value="MATCH ME">
+      
+  </div> <!-- end .container -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
     
-  </div>
-
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">YOUR MATCH IS</h2> 
+          
+        </div>
+        <div class="modal-body">
+            <h1 id="matchName"></h1>
+          <img id="matchPhoto" src="" alt="Img of matching hero" width="100%">
+        </div>
+        <div class="modal-footer">
+          <a role="button" class="btn btn-danger btn-lg" href="/" >Close</a>
+        </div>
+      </div> <!-- modal content ends -->
+      <!-- data-dismiss="modal" -->
+    </div>
+  </div> <!-- modal ends -->
   <footer>
       <p class="text-center" id="footP">&copy COPY RIGHT 2017 J A S O N + N A V A R R O <br><a  class="text-center" href="/api/heros">All Hero's API</a> | <a href="https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test">GitHub Repo</a> </p> 
 
   </footer>
-
+  
   <script type="text/javascript">
   
   $("#submit").on("click", function(){
-    
     
     var user = {
     "name": $("#name").val().trim(),
@@ -185,21 +206,26 @@
       if(user.name == "" || user.pic == "" || user.answers[i] == ""){
         verify = false;
     }}
-    
+
+
     if(verify){
-    $.post("/api/heros",user, function(data){
-      
-      
+    $.post("/api/heros", user, function(data){
+      console.log(data);
+
+      $("#matchName").text(data.name)
+      $("#matchPhoto").attr('src', data.pic)
+      $("#myModal").modal('toggle');
     })
-    
+  
     }
     else{
-      alert('fill out form')
+      alert("PLEASE FILL OUT THE ENTIRE FORM BEFORE SUBMITTING.")
     }
   })
 
 
   </script>
+ 
 </body>
 
 </html>
