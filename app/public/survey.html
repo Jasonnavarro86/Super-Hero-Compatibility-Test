@@ -10,16 +10,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Shadows+Into+Light" rel="stylesheet">
    
   
   <title>SUPER HERO COMPATIBILITY TEST</title>
   <style>
 
-
+    /* Setting position relative for img  of dead pool to be absolute. */
     .jumbotron{position: relative;}
+
+    /* I stretch the input length. */
     .input {max-width: 50%;}
 
+    /* Setting font and sizes.*/
     h1,h2,h3{font-family: 'Bangers', cursive; }
 
     h1{font-size: 85px;}
@@ -27,64 +30,66 @@
     h2, p,a{font-family: 'Shadows Into Light', cursive; }
 
     h2{font-size: 35px; }
+
     h3{font-size: 50px; }
 
     h4{font-family: 'Shadows Into Light', cursive;}
 
+    /* This is my copyright section. */
+
     #footP{margin-top: 10em; font-size: 17px;}
+
+    /* My Submit button. */
 
     #submit{font-size: 27px; font-family: 'Shadows Into Light', cursive; text-shadow: 1px 1px #000000; margin-bottom: 0px;}
 
+    /* My selectors. */
     select{ width: 190px; font-family: 'Shadows Into Light', cursive;}
 
-    .red-text{ color:red;}
     
+    /* Baby Groot div. */
     .groot{ clear: both;}
 
+    /* Captain America img. */
    .captain{position: absolute; right:2.5%; top:18.9%} 
 
-   #shield{position: absolute; top: 118%; right:21%;}
+    /* Hammer img. */
+   #hammer{position: absolute; top: 118%; right:21%;}
 
+    /* Marvel Logo img. */
    #logo{position: absolute; top: 40%; right:35%;}
 
+    /* Deadpool img. */
    #deadpool{position: absolute; right:0; bottom:-0; z-index: 500} 
 
-   #spider{
-     float:right;
-     
-    animation: animation1 3.5s infinite;
-    
-}
+    /* Iornman img and animation. */
+   #iornMan{ float:right; animation: animation1 3.5s infinite;}
 
-@keyframes animation1{
+  @keyframes animation1{
     0%{ transform: translateX(-540px) translateY(70%)}
    
     50%{transform: translateX(-540px) translateY(80%)}
     
     100%{transform: translateX(-540px) translateY(70%)}
-}
+  }
 
-#matchName{animation: text1 0.5s infinite;}
+  /* The text inside the modal. */
+  #matchName{animation: text1 0.5s infinite;}
 
-@keyframes text1 {
+  @keyframes text1 {
     0% { color: white;}
     20%{ color: #FF0000;}
     40%{color: #FF3444;}
     60%{color: #FA4446;}
     80% {color: #FF4577;}
     100% {color: grey;}
-}
-  #claws{
-    float: right;
-
-    position: absolute;
-    
   }
+
   </style>
 </head>
 
 <body>
-    <!-- <img src="https://c1-zingpopculture.eb-cdn.com.au/merchandising/images/packshots/f9c2088482a5459f9b5f9888ef051a03_Large.png" alt="claws" id="claws" width="12%"> -->
+    <!-- All content. -->
   <div class="main jumbotron container">
     
     <h1 class="text-center ">SUPER HERO COMPATIBILITY TEST</h1>
@@ -92,9 +97,11 @@
     <h2 class="text-center red-text text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</h2>
     <br>
 
+    <!-- Groot img. -->
     <div class="groot">
       <img id="groot" src="https://cache.popcultcha.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/o/gotg2-awesome-groot-premium-motion-statue-.png" alt="groot" width="20%">
-      </div>
+    </div>
+    <!-- Name and photo url section. -->
     <h3>About You</h3>
     <br>
     <h4 class="lead">NAME (required)</h4>
@@ -109,9 +116,11 @@
 
     <br>
     <hr class="my-4">
+      <!-- Iorn Man img. -->
+    <img id="iornMan" src="http://vignette1.wikia.nocookie.net/ironman/images/e/eb/Marvel-iron-man-mark-xlvi-sixth-scale-captain-america-civil-war-hot-toys-silo-902622.png/revision/latest?cb=20160610130210" alt="iorn man" width="23%">
       
-    <img id="spider" src="http://vignette1.wikia.nocookie.net/ironman/images/e/eb/Marvel-iron-man-mark-xlvi-sixth-scale-captain-america-civil-war-hot-toys-silo-902622.png/revision/latest?cb=20160610130210" alt="iorn man" width="23%">
-      <h3>Questions</h3>
+    <!-- Questions section. -->
+    <h3>Questions</h3>
 
       <br>
       <h4 class="lead">ARE YOU AFFRAID OF HEIGHTS?</h4>
@@ -217,18 +226,21 @@
       </select>
 
       <br><br><br>
-     
+      <!-- Deadpool img. -->
       <img id="deadpool" src="http://www.officialpsds.com/images/thumbs/Deadpool-Sitting-psd104851.png" alt="deadpool" width="13%">
+      <!-- Submit button. -->
       <input id="submit"  class="btn btn-primary btn-lg btn-block" type="submit" value="MATCH ME">
       
   </div> <!-- end .container -->
+
+  <!-- Captin img. -->
 <img src="http://i5.walmartimages.com/dfw/4ff9c6c9-5a48/k2-_cf1f060a-42d2-4045-89a9-0557e5ffa212.v1.png" alt="cap" class="captain" width="19%">
-
-<img src="https://c1-zingpopculture.eb-cdn.com.au/merchandising/images/packshots/f9c2088482a5459f9b5f9888ef051a03_Large.png" alt="sheild logo" id="shield" width="10%">
-
+  <!-- Hammer img. -->
+<img src="https://c1-zingpopculture.eb-cdn.com.au/merchandising/images/packshots/f9c2088482a5459f9b5f9888ef051a03_Large.png" alt="Thors hammer" id="hammer" width="10%">
+<!-- Marvel logo. -->
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Marvel_Studios_2016_logo.svg/2000px-Marvel_Studios_2016_logo.svg.png" alt="marvel logo" id="logo" width="29%">
 
-
+<!-- My modal. -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
     
@@ -252,30 +264,35 @@
     </div>
   </div> <!-- modal ends -->
 
-  <!-- <img src="https://www.sideshowtoy.com/wp-content/uploads/2017/04/marvel-guardians-of-the-galaxy-vol-2-star-lord-sixth-scale-silo-903009.png" alt="star lord" class="starLord" width="8%"> -->
+  <!-- My coryright and links. -->
   <footer>
       <p class="text-center" id="footP">&copy COPY RIGHT 2017 J A S O N + N A V A R R O <br><a  class="text-center" href="/api/heros">All Hero's API</a> | <a href="https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test">GitHub Repo</a> </p> 
 
   </footer>
   
+ 
   <script type="text/javascript">
   
+  // Listening to the submit button. 
   $("#submit").on("click", function(){
     
+    // Storing the users info into an object. 
     var user = {
     "name": $("#name").val().trim(),
     "pic": $("#photo").val().trim(),
     "answers": [ $("#q1").val().trim(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
     }
     
+    // Checking that the user filled out the complete form.
     var verify = true;
 
+    // loop through the users answers to verify all are filled. 
     for (var i = 0; i < user.answers.length; i++) {
       if(user.name == "" || user.pic == "" || user.answers[i] == ""){
         verify = false;
     }}
 
-
+    // Here I set my $.post if form is completed and send the users info. 
     if(verify){
     $.post("/api/heros", user, function(data){
       console.log(data);
@@ -283,9 +300,10 @@
       $("#matchName").text(data.name)
       $("#matchPhoto").attr('src', data.pic)
       $("#myModal").modal('toggle');
-    })
-  
+
     }
+  )}
+  // If form is incomplete I alert the user.
     else{
       alert("PLEASE FILL OUT THE ENTIRE FORM BEFORE SUBMITTING.")
     }

@@ -14,10 +14,9 @@
   <title>SUPER HERO COMPATIBILITY TEST</title>
   <style>
 
-    
-   /* body{ background-image: url('http://38.media.tumblr.com/1f84e5a7b58d16ac2e4de000dd228f31/tumblr_noo5vmVlkB1u9b9ceo1_500.gif'); background-size:10%} */
+    /* Stretch my inputs length. */
     .input {max-width: 50%;}
-
+    /* Set fonts families and sizes. */
     h1, h2, h3{font-family: 'Bangers', cursive;}
 
     h1{font-size: 85px; }
@@ -26,14 +25,17 @@
 
     .lead{font-family: 'Bangers', cursive; font-size: 32px;}
 
+    /* my copyright section. */
     #footP{margin-top: 10em; font-size: 17px; z-index: 99;}
-
+    /* This is my Spider Man img. */
     #footerPic{ position: fixed; bottom:0;}
 
     select{ width: 190px;}
 
-   #redtext{  font-family: 'Shadows Into Light', cursive; font-size: 40px;}
+    /* Second text under my h1 */
+   #secText{  font-family: 'Shadows Into Light', cursive; font-size: 40px;}
 
+    /* Spider animation. */
    #spider{position: fixed; right:-0px; top:0;
      animation: animation1 6.5s infinite;
      opacity: 0.9;}
@@ -47,16 +49,15 @@
   </style>
 </head>
 <body>
-    
+    <!-- Main container. -->
     <div class="jumbotron container">
+      
         <h1 id="title">SUPER HERO COMPATIBILITY TEST</h1>
-        <p id="redtext" class="lead text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</p>
+        <p id="secText" class="lead text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</p>
         <hr class="my-4">
-        <div class="spider"> 
-         
-          
-        </div>
+
         <p id="ready" class="lead">WANT TO BEGIN?</p>
+        <!-- Buttons -->
         <p class="">
           <a id="Start" class="btn btn-danger  btn-lg" href="/survey" role="button">YES PLEASE</a>
           <a id="Start" class="btn btn-danger  btn-lg" href="/comeagain" role="button">NO THANKS</a>
@@ -65,23 +66,14 @@
        
       </div>
 
-     
+      <!-- Spider img. -->
       <img id="spider" src="https://i.pinimg.com/736x/3b/92/3a/3b923a7d216cc6e2335a59962b093446--halloween-stencils-halloween-clipart.jpg" alt="spider" width="7%">
-
+      <!-- Spider Man img. -->
       <img class="" src="https://orig00.deviantart.net/9550/f/2017/179/1/b/spider_man__homecoming_png_29_by_sidewinder16-dbeeqku.png" alt="spiderman" id="footerPic" width="15%">
       
       <p class="text-center" id="footP"> &copy COPYRIGHT 2017 J A S O N + N A V A R R O <br><a  class="text-center" href="/api/heros">All Hero's API</a> | <a href="https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test">GitHub Repo</a> </p> 
-      <footer>
-            
-      
-         
-       </footer>
-      
-     
-     <script type="text/javascript">
-       
-       
-     </script>
+
+
 </body>
 </html>
 
