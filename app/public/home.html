@@ -13,10 +13,10 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <title>SUPER HERO COMPATIBILITY TEST</title>
   <style>
-   
-    .input {
-      max-width: 50%;
-    }
+
+    
+   /* body{ background-image: url('http://38.media.tumblr.com/1f84e5a7b58d16ac2e4de000dd228f31/tumblr_noo5vmVlkB1u9b9ceo1_500.gif'); background-size:10%} */
+    .input {max-width: 50%;}
 
     h1, h2, h3{font-family: 'Bangers', cursive;}
 
@@ -34,7 +34,7 @@
 
    #redtext{  font-family: 'Shadows Into Light', cursive; font-size: 40px;}
 
-   #spider{position: fixed; right:0; top:0;
+   #spider{position: fixed; right:-0px; top:0;
      animation: animation1 6.5s infinite;
      opacity: 0.9;}
 
@@ -43,12 +43,13 @@
      25%{ transform: translateY(-5px)}
      100%{ transform: translateY(-350px)}}
 
+    
   </style>
 </head>
 <body>
     
     <div class="jumbotron container">
-        <h1 class="white">SUPER HERO COMPATIBILITY TEST</h1>
+        <h1 id="title">SUPER HERO COMPATIBILITY TEST</h1>
         <p id="redtext" class="lead text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</p>
         <hr class="my-4">
         <div class="spider"> 
@@ -63,6 +64,8 @@
         
        
       </div>
+
+     
       <img id="spider" src="https://i.pinimg.com/736x/3b/92/3a/3b923a7d216cc6e2335a59962b093446--halloween-stencils-halloween-clipart.jpg" alt="spider" width="7%">
 
       <img class="" src="https://orig00.deviantart.net/9550/f/2017/179/1/b/spider_man__homecoming_png_29_by_sidewinder16-dbeeqku.png" alt="spiderman" id="footerPic" width="15%">
