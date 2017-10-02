@@ -20,9 +20,6 @@ module.exports = function (app, heros) {
         // HERE I STORE THE PARSED USER ANSWERS
         var parseUserInput = []
 
-        // HERE I STORE THE DIFFERENCES AFTER THE USER TOTAL IS SUBTRACTED FROM EACH HERO'S TOTAL. 
-        var matchIndex = []
-
         // I RUN THREW EVERY ANSWER OF EACH HERO AND SUBTRACT THE USERS INPUT FOR THAT SAME QUESTION AND PUSH IT INTO THE UserMatchMath ARRAY.
         for (var i = 0; i < heros.length; i++) {
 
@@ -54,51 +51,42 @@ module.exports = function (app, heros) {
             return a + b;
         }, 0);
 
-        // HERE I SUBTRACT THE USER SUM AND EACH HERO'S TOTAL AND PUSH THE SUM INTO THE matchIndex ARRAY.
-        heroTotals.forEach(function (element) {
-            matchIndex.push(Math.abs(element - userSum));
-
-        }, this);
-
-        // HERE I CLONE THE matchIndex ARRAY SO I CAN SORT THE matchIndex ARRAY FROM LEAST DIFFERENCE TO MOST.
+        // HERE I CLONE THE heroTotals ARRAY SO I CAN SORT THE ARRAY FROM THE LEAST DIFFERENCE TO MOST.
         var cloneArray = []
 
-        for (var e = 0; e < matchIndex.length; e++) {
+        for (var e = 0; e < heroTotals.length; e++) {
 
-            cloneArray.push(matchIndex[e])
+            cloneArray.push(heroTotals[e])
         }
 
-        // HERE I SORT THE matchIndex ARRAY FROM LEAST DIFFERENCE TO MOST.
-        var matchHero = matchIndex.sort(function (a, b) {
+        // HERE I SORT THE heroTotals ARRAY FROM THE LEAST DIFFERENCE TO MOST.
+        var matchHero = heroTotals.sort(function (a, b) {
             return a - b
         });
 
-        // HERE I FIND THE MATCH BY TAKING THE LEAST DIFFERENCE FROM THE matchHero ARRAY AND FINDING THE MATCHING INDEX IN THE cloneArray AND FOR A CATCH INCASE TWO HEROS MATCH ONE WILL BE CHOSEN BY RANDOM.
+        // HERE I FIND THE MATCH BY TAKING THE FIRST ITEM FROM THE heroTotals ARRAY AND FINDING THE MATCHING INDEX IN THE cloneArray AND FOR A CATCH INCASE TWO HEROS MATCH ONE WILL BE CHOSEN BY RANDOM.
         var findMatch = [cloneArray.indexOf(matchHero[0]), cloneArray.lastIndexOf(matchHero[0])]
 
-
-        // HERE I CATCH IF TWO HEROS MATCH OR NOT AND SET THE MATCHING HERO
+        // HERE I MAKE THE CATCH IF TWO HEROS MATCH OR NOT AND SET THE RANDOM HERO
         if (matchHero[0] == matchHero[1]) {
 
             var Match = heros[findMatch[Math.floor((Math.random() * 2) + 0)]]
+            // HERE I SEND THE MATCHING HERO IF THERE IS ONLY ONE
         } else {
             Match = heros[findMatch[0]]
         }
-
         // HERE I PUSH THE USERS INFO INT THE HERO API
         heros.push(req.body)
-
-
+        // HERE I SEND THE MATCH TO THE SURVEY HTML
         res.send(Match)
 
-
         // HERE I KEPT THE CONSOLE LOGS FOR TESTING PURPOSES 
-        console.log("the match", Match);
-        console.log("findMatch", findMatch);
-        console.log("matchHero", matchHero);
-        console.log("cloneArray", cloneArray);
-        console.log("heroTotals", heroTotals);
-        console.log("userSum", userSum);
+        // console.log("the match", Match);
+        // console.log("findMatch", findMatch);
+        // console.log("matchHero", matchHero);
+        // console.log("cloneArray", cloneArray);
+        // console.log("heroTotals", heroTotals);
+        // console.log("userSum", userSum);
 
             // HERE I RESET MY ARRAYS
             cloneArray = []
@@ -106,9 +94,5 @@ module.exports = function (app, heros) {
             heroTotals = []
             parseUserInput = []
             matchIndex = []
-    
-            console.log(matchIndex);
-
     })
-
 }

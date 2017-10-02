@@ -1,7 +1,7 @@
 // HEROS API
 const heros = [{
     name: "Spider Man",
-    pic: "http://nerdist.com/wp-content/uploads/2017/07/HeaderSpidey.jpg",
+    pic: "https://www.hdwallpapers.in/walls/spider_man_homecoming_hd-wide.jpg",
     answers: ["1", "3", "3", "2", "2", "1", "1", "4", "3", "5"]
 },
 {

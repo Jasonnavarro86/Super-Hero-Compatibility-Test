@@ -52,27 +52,60 @@
    width: 190px;
       
     }
+    
+    #redtext{
+        color: #61839C
+    }
+  
+#spider{
+  position: fixed;
+    right:0;
+    top:0;
+    animation: animation1 6.5s infinite;
+    opacity: 0.9;
+}
+
+
+@keyframes animation1{
+    0%{ transform: translateY(-350px)}
+    25%{ transform: translateY(-5px)}
+    100%{ transform: translateY(-350px)}
+ 
+}
+/* @keyframes animation1{
+    0%{ transform: translateY(-400px)}
+    25%{ transform: translateY(350px)}
+    100%{ transform: translateY(-100px)}
+ 
+} */
+
   </style>
 </head>
 <body>
     
     <div class="jumbotron container">
-        <h1 class="">SUPER HERO COMPATIBILITY TEST</h1>
-        <p class="lead text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</p>
+        <h1 class="white">SUPER HERO COMPATIBILITY TEST</h1>
+        <p id="redtext" class="lead">FIND OUT WHAT HERO YOU ARE MOST LIKE</p>
         <hr class="my-4">
-       
+        <div class="spider"> 
+         
+          
+        </div>
         <p id="ready" class="">ARE YOU READY TO BEGIN?</p>
         <p class="">
           <a id="Start" class="btn btn-danger  btn-lg" href="/survey" role="button">Let's Start</a>
         </p>
+        
        
-       
-      </div> 
+      </div>
+      <img id="spider" src="https://i.pinimg.com/736x/3b/92/3a/3b923a7d216cc6e2335a59962b093446--halloween-stencils-halloween-clipart.jpg" alt="spider" width="7%">
+
       <img class="" src="https://orig00.deviantart.net/9550/f/2017/179/1/b/spider_man__homecoming_png_29_by_sidewinder16-dbeeqku.png" alt="spiderman" id="footerPic" width="15%">
+      
       <p class="text-center" id="footP"> &copy COPYRIGHT 2017 J A S O N + N A V A R R O <br><a  class="text-center" href="/api/heros">All Hero's API</a> | <a href="https://github.com/Jasonnavarro86/Super-Hero-Compatibility-Test">GitHub Repo</a> </p> 
       <footer>
             
-           
+      
          
        </footer>
       
