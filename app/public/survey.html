@@ -15,60 +15,47 @@
   
   <title>SUPER HERO COMPATIBILITY TEST</title>
   <style>
+
+   
+    
     .input {max-width: 50%;}
 
-    h1,h2,h3{font-family: 'Bangers', cursive;}
+    h1,h2,h3{font-family: 'Bangers', cursive; }
 
     h1{font-size: 85px;}
 
-    h2, p,a{font-family: 'Shadows Into Light', cursive;}
+    h2, p,a{font-family: 'Shadows Into Light', cursive; }
 
-    h3{font-size: 40px;}
+    h3{font-size: 40px; }
 
     h4{font-family: 'Shadows Into Light', cursive;}
 
     #footP{margin-top: 10em; font-size: 17px;}
 
-    #submit{font-family: 'Shadows Into Light', cursive;}
-    select{ width: 190px; font-family: 'Shadows Into Light', cursive;}
-    .red-text{ color:red;}
-     /* Add animation to the disney text. */
+    #submit{font-family: 'Shadows Into Light', cursive; text-shadow: 1px 1px #000000;}
 
-     #matchName {
-        animation: text1 0.5s infinite;
-    }
+    select{ width: 190px; font-family: 'Shadows Into Light', cursive;}
+
+    .red-text{ color:red;}
+    
+     #matchName { animation: text1 0.5s infinite;}
 
     @keyframes text1 {
-        0% {
-            color: white;
-        }
-        20% {
-            color: #FF0000;
-        }
-        40% {
-            color: #FF3444;
-        }
-        60% {
-            color: #FA4446;
-        }
-        80% {
-            color: #FF4577;
-        }
-        100% {
-            color: grey;
-        }
+        0% { color: white;}
+        20%{ color: #FF0000;}
+        40%{color: #FF3444;}
+        60%{color: #FA4446;}
+        80% {color: #FF4577;}
+        100% {color: grey;}
     }
-    #groot{
-     
-    }
-    .groot{ 
-      clear: both;}
+
+    .groot{ clear: both;}
    
   </style>
 </head>
 
 <body>
-  <div class="main container">
+  <div class="main jumbotron container">
     <h1 class="text-center ">SUPER HERO COMPATIBILITY TEST</h1>
 
     <h2 class="text-center red-text text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</h2>
@@ -91,7 +78,7 @@
 
     <br>
     <hr class="my-4">
-  
+      
     
       <h3>Questions</h3>
 
@@ -146,6 +133,7 @@
         <option value="5">5 <br>(Heck Yea)</option>
       </select>
       <br><br>
+
       <h4 class="lead">DO YOU GET ANGRY QUICKLY?</h4>
       <select id="q6">
         <option value=""></option>
@@ -200,14 +188,16 @@
       <input id="submit"  class="btn btn-primary btn-lg btn-block" type="submit" value="MATCH ME">
       
   </div> <!-- end .container -->
+
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
+            <h2 class=" text-center">YOUR MATCH IS</h2> 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class=" text-center">YOUR MATCH IS</h2> 
+         
           
         </div>
         <div class="modal-body">
