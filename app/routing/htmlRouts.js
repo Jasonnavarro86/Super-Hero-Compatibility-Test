@@ -13,7 +13,9 @@ function routeOne(app, __dirname, path) {
             break;
             case "/all":
             res.sendFile(path.join(__dirname + "/app/public/home.html"))
-            console.log("hi");
+            break;
+            case "/comeagain":
+            res.sendFile(path.join(__dirname + "/app/public/comeagain.html"))
             break;
             default:
             res.sendFile(path.join(__dirname + "/app/public/home.html"))
