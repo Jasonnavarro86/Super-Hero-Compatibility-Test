@@ -9,7 +9,7 @@
 
 Answer four basic questions about yourself to find out which hero matches your personailty the most. 
 
-## Demo
+## Live Demo
 
 ![demo-start](https://user-images.githubusercontent.com/28733244/31101735-f1e5f5a0-a79c-11e7-8452-b21adddd39b9.gif)
 
