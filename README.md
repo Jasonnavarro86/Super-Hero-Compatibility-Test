@@ -11,7 +11,7 @@ Answer four basic questions about yourself to find out which hero matches your p
 
 ## Demo
 
-
+![demo-start](https://user-images.githubusercontent.com/28733244/31101735-f1e5f5a0-a79c-11e7-8452-b21adddd39b9.gif)
 
 ![middle](https://user-images.githubusercontent.com/28733244/31101699-d48782f8-a79c-11e7-93ea-25768ea3b405.gif)
 
