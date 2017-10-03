@@ -4,6 +4,7 @@
 + Build a full stack app with Node
 + Match users info to data stored on the server side.
 + Add user to the stored data.
++ Deploy app on Heroku.
 
 ## Instructions
 
