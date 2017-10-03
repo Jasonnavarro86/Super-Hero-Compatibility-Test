@@ -7,7 +7,7 @@
 
 ## Instructions
 
-Answer four basic questions about yourself to find out which hero matches your personailty the most. 
+Answer ten basic questions about yourself to find out which hero matches your personailty the most. 
 
 ## Live Demo
 
