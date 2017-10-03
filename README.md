@@ -7,7 +7,7 @@
 
 ## Instructions
 
-Answer ten basic questions about yourself to find out which hero matches your personailty the most. 
+Answer ten basic questions about yourself to find out which hero matches your personailty. 
 
 ## Live Demo
 
@@ -19,6 +19,6 @@ Answer ten basic questions about yourself to find out which hero matches your pe
 
 ![end](https://user-images.githubusercontent.com/28733244/31101652-b9c2cd92-a79c-11e7-899d-30a34d68a2ea.gif)
 
-+ As a bonus if user chooses no thanks on the home page they get rerouted to a funny gif.
+## Bonus: If user chooses no thanks on the home page they get rerouted to a funny gif.
 
 ![bonus](https://user-images.githubusercontent.com/28733244/31111367-8ac50c6e-a7db-11e7-988c-693be35017a4.gif)
