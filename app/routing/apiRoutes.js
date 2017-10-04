@@ -76,7 +76,7 @@ module.exports = function (app, heros) {
             Match = heros[findMatch[0]]
         }
         // HERE I PUSH THE USERS INFO INT THE HERO API
-        heros.push(req.body)
+        // heros.push(req.body)
         // HERE I SEND THE MATCH TO THE SURVEY HTML
         res.send(Match)
 
