@@ -9,6 +9,7 @@ var heros = require('./app/data/friends.js')
 var routes = require('./app/routing/htmlRouts.js')
 var Api = require('./app/routing/apiRoutes.js')
 
+// SET PORT
 var PORT = process.env.PORT || 2222;
 
 // SETTING MIDDLEWARE WITH BODY PARSER
