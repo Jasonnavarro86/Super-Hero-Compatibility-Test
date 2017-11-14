@@ -23,13 +23,6 @@ function routeOne(app, __dirname, path) {
             default:
             res.sendFile(path.join(__dirname + "/app/public/home.html"))
         }
-        
-    
     })
-
-    
-
 }
-
-
 module.exports = routeOne;
