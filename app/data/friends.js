@@ -39,6 +39,5 @@ const heros = [{
     pic: "http://wallpapersdsc.net/wp-content/uploads/2015/10/Captain_America_16.jpg",
     answers: ["3", "5", "3", "2", "2", "1", "5", "5", "5", "1"]
 },]
-
 // EXPORT
 module.exports = heros;
