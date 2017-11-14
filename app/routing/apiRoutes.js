@@ -38,10 +38,10 @@ module.exports = function (app, heros) {
                 return a + b;
             }, 0)
 
-            
             heroTotals.push(sum)
         }
         // MY USER INPUTS WERE COMING IN STRINGED SO HERE I PARSE THEM AND STORE THEM IN THE parseUserInput ARRAY.
+
         req.body.answers.forEach(function (element) {
             parseUserInput.push(parseInt(element))
         }, this)
