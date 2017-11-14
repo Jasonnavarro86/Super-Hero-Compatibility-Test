@@ -26,7 +26,6 @@ function routeOne(app, __dirname, path) {
         }
 
     })
-
 }
 
 module.exports = routeOne;
