@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 var path = require('path')
 var app = express()
 
-// LOCAL FILES
+// REQUIRE LOCAL FILES
 var heros = require('./app/data/friends.js')
 var routes = require('./app/routing/htmlRouts.js')
 var Api = require('./app/routing/apiRoutes.js')
