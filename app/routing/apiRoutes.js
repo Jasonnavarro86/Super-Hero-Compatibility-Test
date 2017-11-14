@@ -53,17 +53,14 @@ module.exports = function (app, heros) {
 
         // HERE I CLONE THE heroTotals ARRAY SO I CAN SORT THE ARRAY FROM THE LEAST DIFFERENCE TO MOST.
         var cloneArray = []
-
-        for (var e = 0; e < heroTotals.length; e++) {
+         for (var e = 0; e < heroTotals.length; e++) {
 
             cloneArray.push(heroTotals[e])
-        }
-
+         }
         // HERE I SORT THE heroTotals ARRAY FROM THE LEAST DIFFERENCE TO MOST.
         var matchHero = heroTotals.sort(function (a, b) {
             return a - b
         });
-
         // HERE I FIND THE MATCH BY TAKING THE FIRST ITEM FROM THE heroTotals ARRAY AND FINDING THE MATCHING INDEX IN THE cloneArray AND FOR A CATCH INCASE TWO HEROS MATCH ONE WILL BE CHOSEN BY RANDOM.
         var findMatch = [cloneArray.indexOf(matchHero[0]), cloneArray.lastIndexOf(matchHero[0])]
 
