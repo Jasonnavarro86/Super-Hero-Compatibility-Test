@@ -8,6 +8,7 @@ const heros = [{
     name: "Wolverine",
     pic: "https://wallpapercave.com/wp/GotgOus.jpg",
     answers: ["3", "1", "1", "3", "1", "5", "3", "1", "5", "3"]
+    
 },
 {
     name: "Iron Man",
