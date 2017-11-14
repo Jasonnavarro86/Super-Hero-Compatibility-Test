@@ -5,9 +5,7 @@ module.exports = function (app, heros) {
     app.get("/api/heros", function (req, res) {
 
         res.json(heros)
-
     })
-
     // PUSHING NEW HERO TO HERO API AND COMPARING USER INPUT TP FIND MATCHING HERO. 
     app.post('/api/heros', function (req, res) {
 
