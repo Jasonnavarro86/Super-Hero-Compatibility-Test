@@ -84,7 +84,33 @@
     80% {color: #FF4577;}
     100% {color: grey;}
   }
-
+  @media only screen and (max-width: 1999px) {
+    #iornMan{  position:absolute; right:-200px; top:659px; animation: animation1 2.5s infinite;}
+  }
+  @media only screen and (max-width: 992px) {
+     #iornMan{  position:absolute; right:-500px; top:939px; animation: animation1 2.5s infinite;} 
+  }
+  
+  @media only screen and (max-width: 920px) {
+    .red-text{
+        font-size:20px !important;
+    }
+    .mainTitle{
+        font-size:60px !important;
+    }
+    #logo{position: absolute; top: 0px; right:35%;}
+   
+}
+@media only screen and (max-width: 520px) {
+ 
+  .mainTitle{
+        font-size:50px !important;
+    }
+    .red-text{
+        font-size:14px !important;
+    }
+    #deadpool{position: absolute; right:15%; bottom:-0; z-index: 500} 
+}
   </style>
 </head>
 
@@ -92,7 +118,7 @@
     <!-- All content. -->
   <div class="main jumbotron container">
     
-    <h1 class="text-center ">SUPER HERO COMPATIBILITY TEST</h1>
+    <h1 class="text-center mainTitle">SUPER HERO COMPATIBILITY TEST</h1>
 
     <h2 class="text-center red-text text-muted">FIND OUT WHAT HERO YOU ARE MOST LIKE</h2>
     <br>
